@@ -1,0 +1,22 @@
+# ~/.zshrc
+
+export ZSH_CUSTOM=~/etc/oh-my-zsh
+
+ZSH_THEME="custom"
+
+# completion
+CASE_SENSITIVE="false"
+HYPHEN_INSENSITIVE="true"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+unsetopt share_history
+
+alias sudo='sudo '
+
+for sh in ~/etc/alias.d/*; do
+	[[ -r "$sh" ]] && . "$sh"
+done
+unset sh

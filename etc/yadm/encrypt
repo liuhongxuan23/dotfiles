@@ -1,0 +1,3 @@
+etc/ssh/config
+etc/ssh/id_*
+etc/ssh/*.pem

@@ -1,0 +1,24 @@
+# ~/.inputrc
+
+$include /etc/inputrc
+
+set editing-mode vi
+
+$if mode=vi
+
+"\C-A": beginning-of-line
+"\C-B": backward-char
+"\C-D": delete-char
+"\C-E": end-of-line
+"\C-F": forward-char
+"\C-H": backward-delete-char
+"\C-I": complete
+"\C-J": accept-line
+"\C-K": kill-line
+"\C-L": clear-screen
+"\C-M": accept-line
+"\C-N": next-history
+"\C-P": previous-history
+"\C-?": backward-delete-char
+
+$endif

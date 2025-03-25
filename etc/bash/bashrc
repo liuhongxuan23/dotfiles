@@ -1,0 +1,26 @@
+# ~/.bashrc
+
+# do nothing if not interactive
+[[ $- != *i* ]] && return
+
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+export PS1="\u@\h \w \$ "
+
+# enable color
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# useful abbreviations
+alias sudo='sudo '
+alias ll='ls -l'
+alias psa='ps -eo pid,ppid,euser,egroup,tty,pcpu,pmem,time,cmd'
+
+for sh in ~/etc/alias.d/*; do
+	[[ -r "$sh" ]] && . "$sh"
+done
+unset sh
