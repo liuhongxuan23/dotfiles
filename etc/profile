@@ -1,0 +1,19 @@
+# ~/.profile
+
+export PATH="$PATH:$HOME/bin"
+
+export PAGER="less"
+export EDITOR="vim"
+export VISUAL="vim"
+
+for sh in ~/etc/profile.d/*
+do
+    [[ -r "$sh" ]] && . "$sh"
+done
+unset sh
+
+if [[ "$XDG_SESSION_TYPE" = "wayland" ]]
+then
+    export LANG=zh_CN.UTF-8
+    export LC_ALL=zh_CN.UTF-8
+fi

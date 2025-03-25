@@ -1,0 +1,39 @@
+"
+
+set nocompatible
+
+"gui
+set mouse=a
+
+"ui
+set showmode
+set showcmd
+set ruler
+
+"file format
+filetype plugin indent on
+set fileencodings=ucs-bom,utf-8,gbk,gb18030,cp1252,ascii
+
+"display
+syntax on
+set nowrap
+set number
+set list
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<
+
+"indent
+set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+
+"move
+set whichwrap=b,s,<,>,[,]
+
+"search
+set incsearch
+set hlsearch
+
+"edit
+set backspace=indent,eol,start
