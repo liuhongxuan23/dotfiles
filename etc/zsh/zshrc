@@ -1,6 +1,5 @@
 # ~/.zshrc
 
-export ZSH=~/share/oh-my-zsh
 export ZSH_CUSTOM=~/etc/oh-my-zsh
 
 ZSH_THEME="custom"
